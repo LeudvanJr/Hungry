@@ -186,7 +186,11 @@ h6 {
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
+<<<<<<< HEAD
   top: 40px;
+=======
+  top: 0px;
+>>>>>>> master
 }
 
 #header.header-scrolled {
@@ -1745,7 +1749,11 @@ section, .menu {
   color: #cda45e;
 }
 
+<<<<<<< HEAD
 #footer .footer-top .footer-newsletter form {
+=======
+/* #footer .footer-top .footer-newsletter form {
+>>>>>>> master
   margin-top: 30px;
   background: #28251f;
   padding: 6px 10px;
@@ -1779,7 +1787,11 @@ section, .menu {
 
 #footer .footer-top .footer-newsletter form input[type=submit]:hover {
   background: #d3af71;
+<<<<<<< HEAD
 }
+=======
+} */
+>>>>>>> master
 
 #footer .copyright {
   text-align: center;
