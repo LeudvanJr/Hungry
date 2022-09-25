@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Restaurantly Bootstrap Template - Index</title>
+  <title>Restaurante Hungry</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -69,11 +69,11 @@
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">Sobre</a></li>
           <li><a class="nav-link scrollto" href="menu.html">Menu</a></li>
-          <li><a class="nav-link scrollto" href="#events">Eventos</a></li>
+          <li><a class="nav-link scrollto" href="eventos.html">Eventos</a></li>
           <li><a class="nav-link scrollto" href="#chefs">Chefs</a></li>
-          <li><a class="nav-link scrollto" href="#gallery">Galeria</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
+          <li><a class="nav-link scrollto" href="galeria.html">Galeria</a></li>
+          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a> -->
+            <!-- <ul>
               <li><a href="#">Drop Down 1</a></li>
               <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
@@ -87,7 +87,7 @@
               <li><a href="#">Drop Down 2</a></li>
               <li><a href="#">Drop Down 3</a></li>
               <li><a href="#">Drop Down 4</a></li>
-            </ul>
+            </ul> -->
           </li>
           <li><a class="nav-link scrollto" href="#contact">Contato</a></li>
         </ul>
@@ -107,7 +107,7 @@
           <h2>Integrated Feeding Environment</h2>
 
           <div class="btns">
-            <a href="#menu" class="btn-menu animated fadeInUp scrollto">Nosso Menu</a>
+            <a href="menu.html" class="btn-menu animated fadeInUp scrollto">Nosso Menu</a>
             <a href="#book-a-table" class="btn-book animated fadeInUp scrollto">Reserve uma Mesa</a>
           </div>
         </div>
@@ -524,27 +524,27 @@
         <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
           <div class="row">
             <div class="col-lg-4 col-md-6 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Seu Nome" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Seu Nome" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
               <div class="validate"></div>
             </div>
             <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Seu E-mail" data-rule="email" data-msg="Please enter a valid email">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Seu E-mail" data-rule="email" data-msg="Please enter a valid email" required>
               <div class="validate"></div>
             </div>
             <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
-              <input type="tel" class="form-control" name="phone" id="phone" placeholder="Seu Celular" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <input type="text" class="form-control" name="phone" id="phone" placeholder="Seu Celular" data-rule="minlen:11" data-msg="Please enter at least 4 chars" onkeypress="mask(this, mphone);" onblur="mask(this, mphone);" required>
               <div class="validate"></div>
             </div>
             <div class="col-lg-4 col-md-6 form-group mt-3">
-              <input type="date" name="date" class="form-control" id="date" placeholder="Data" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <input type="date" name="date" class="form-control" id="date" placeholder="Data" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
               <div class="validate"></div>
             </div>
             <div class="col-lg-4 col-md-6 form-group mt-3">
-              <input type="time" class="form-control" name="time" id="time" placeholder="Hora" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <input type="time" class="form-control" name="time" id="time" placeholder="Hora" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
               <div class="validate"></div>
             </div>
             <div class="col-lg-4 col-md-6 form-group mt-3">
-              <input type="number" class="form-control" name="people" id="people" placeholder="Qtd. de Pessoas" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+              <input type="number" class="form-control" name="people" id="people" placeholder="Qtd. de Pessoas" data-rule="minlen:1" data-msg="Please enter at least 1 chars" required>
               <div class="validate"></div>
             </div>
           </div>
@@ -568,7 +568,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Opniões</h2>
+          <h2>Opiniões</h2>
           <p>O que pensam sobre nós?</p>
         </div>
 
@@ -582,7 +582,7 @@
                   É... o melhor restaurante que já fui. Tem um menu... e gostei muito da temática... muito interessante. É isso...
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <img src="assets/img/testimonials/akira.jfif" class="testimonial-img" alt="">
                 <h3>Akira Oishi</h3>
                 <h4>Gênio &amp; Japonês</h4>
               </div>
@@ -595,7 +595,7 @@
                     Todos os ingredientes tem uma química excelente, é surpreendente a harmônia entre eles, tanto quanto a relação entre a gastronomia e o tema do restaurante.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <img src="assets/img/testimonials/suzy.jfif" class="testimonial-img" alt="">
                 <h3>Suzy Sayuri</h3>
                 <h4>Professora de Química</h4>
               </div>
@@ -608,8 +608,8 @@
                     Os ingredientes se comunicam como a melhor das redes. 
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Vladmir Camelo</h3>
+                <img src="assets/img/testimonials/vladmir.jpeg" class="testimonial-img" alt="">
+                <h3>Vladmir Dromedário</h3>
                 <h4>Tem Barba e é Professor</h4>
               </div>
             </div><!-- End testimonial item -->
@@ -621,7 +621,7 @@
                     Simplesmente a melhor exposição de arte que já visitei, o menu é uma coleção de arte. Nem Michelangelo seria capaz de tão bela obra.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <img src="assets/img/testimonials/milca.jfif" class="testimonial-img" alt="">
                 <h3>Milca Ceccon</h3>
                 <h4>Faz Arte</h4>
               </div>
@@ -631,10 +631,10 @@
               <div class="testimonial-item">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    O melhor restaurante desse Brasil Tal key? Hungry acima de todos os restaurantes, Brasil acima de tudo e Deus acima de todos... Tal Key?
+                    O melhor restaurante desse Brasil Tal key? Graças ao meu histórico de atleta, o único virus que peguei foi no meu celular mesmo. 
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <img src="assets/img/testimonials/jair.jfif" class="testimonial-img" alt="">
                 <h3>Jair Bolsonaro</h3>
                 <h4>Presidente da República</h4>
               </div>
@@ -751,10 +751,10 @@
                   <span>Chefe e Programador</span>
                 </div>
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="https://twitter.com/?lang=en" target="_blank"><i class="bi bi-twitter"></i></a>
+                  <a href="https://pt-br.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+                  <a href="https://br.linkedin.com/in/erico-veriscimo-39883535" target="_blank"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -762,17 +762,17 @@
 
           <div class="col-lg-4 col-md-6">
             <div class="member" data-aos="zoom-in" data-aos-delay="200">
-              <img src="assets/img/chefs/chefs-2.jpg" class="img-fluid" alt="">
+              <img src="assets/img/chefs/omai.jfif" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Mayara Omai</h4>
                   <span>Teoricamente é Chefe</span>
                 </div>
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="https://twitter.com/?lang=en" target="_blank"><i class="bi bi-twitter"></i></a>
+                  <a href="https://pt-br.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+                  <a href="https://br.linkedin.com/in/mayara-omai-4786b6a9" target="_blank"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -784,13 +784,13 @@
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Felipe Neto</h4>
-                  <span>Programador e Youtuber</span>
+                  <span>Programador e Palhaço</span>
                 </div>
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="https://twitter.com/?lang=en" target="_blank"><i class="bi bi-twitter"></i></a>
+                  <a href="https://pt-br.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/feliperosaneto/" target="_blank"><i class="bi bi-instagram"></i></a>
+                  <a href="https://br.linkedin.com/in/felipe-rosa-neto" target="_blank"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -813,7 +813,7 @@
       </div>
 
       <div data-aos="fade-up">
-        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
+        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.9287956629387!2d-46.44119038445485!3d-23.4990740651814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce61601aec54c5%3A0x388edc7209121354!2sIFSP%20S%C3%A3o%20Miguel%20Paulista!5e0!3m2!1spt-BR!2sbr!4v1663760106036!5m2!1spt-BR!2sbr" frameborder="0" allowfullscreen></iframe>
       </div>
 
       <div class="container" data-aos="fade-up">
@@ -858,17 +858,17 @@
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Seu Nome" required>
+                  <input type="text" required name="name" class="form-control" id="name" placeholder="Seu Nome" required>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Seu E-mail" required>
+                  <input type="email" required class="form-control" name="email" id="email" placeholder="Seu E-mail" required>
                 </div>
               </div>
               <div class="form-group mt-3">
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Assunto" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="8" placeholder="Mensagem" required></textarea>
+                <textarea class="form-control" required name="message" rows="8" placeholder="Mensagem" required></textarea>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
@@ -902,35 +902,35 @@
                 <strong>Telefone:</strong> +55 9872-1249<br>
                 <strong>E-mail:</strong> contato@hungry.com<br>
               </p>
-              <div class="social-links mt-3">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              <div class="social-links mt-3"><br>
+                <a target="_blank" href="https://twitter.com/?lang=en" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a target="_blank"href="https://www.facebook.com/hungrydotdk/" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a target="_blank" href="https://www.instagram.com/explore/tags/hungry/" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a target="_blank" href="https://www.skype.com/en/" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/company/tryhungry" class="linkedin"><i class="bx bxl-linkedin"></i></a>
               </div>
             </div>
           </div>
 
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Link úteis</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Sobre</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Serviços</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#about">Sobre</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="galeria.html">Serviços</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="https://diegocastro.adv.br/modelo-de-termos-de-uso-para-blogs-e-sites/">Terms of service</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="https://privacidade.me/?gclid=Cj0KCQjw7KqZBhCBARIsAI-fTKL7FtQIR2axWPij1EDUZWe7mrwdCvSOdKBAPz-KdETJTLdt4WMfhIwaAinuEALw_wcB">Privacy policy</a></li>
+              </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Nossos serviços</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://github.com/LeudvanJr">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://github.com/matheusg40">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://github.com/matheusg40">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://github.com/LeudvanJr">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://github.com/LeudvanJr">Graphic Design</a></li>
             </ul>
           </div>
           
@@ -940,14 +940,14 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Restaurantly</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>Hungry</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/restaurantly-restaurant-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed by <a href="https://github.com/LeudvanJr">LeudvanJr</a> & <a href="https://github.com/matheusg40">Matheus</a>
       </div>
     </div>
   </footer><!-- End Footer -->

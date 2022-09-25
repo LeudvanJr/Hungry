@@ -41,5 +41,6 @@
   $book_a_table->add_message( $_POST['people'], '# of people', 1);
   $book_a_table->add_message( $_POST['message'], 'Message');
 
-  echo $book_a_table->send();
+  // echo $book_a_table->send();
+  echo "Sucess";
 ?>
