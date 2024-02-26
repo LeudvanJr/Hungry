@@ -1,3 +1,3 @@
 # Hungry
-Restaurante (DSM)
-OPA
+
+Projeto para a Disciplina de Desenvolvimento para Dispositivos Móveis
